@@ -1,0 +1,35 @@
+{
+  "schema_version": "contractcheck.input.v1",
+  "as_of": "2026-10-07T09:00:00Z",
+  "max_age_seconds": 3600,
+  "left": {
+    "market_id": "fictional-A",
+    "title": "Will the Example Index reach 100?",
+    "source_url": "https://example.org/fictional/rules/A",
+    "captured_at": "2026-10-07T08:50:00Z",
+    "rules": {
+      "resolution_source": "Fictional Example Bureau initial publication",
+      "observation_time": "2026-10-08T12:00:00Z",
+      "comparison": "gte",
+      "threshold": "100",
+      "unit": "index points",
+      "outcome_definition": "YES if the initial reported Example Index satisfies the comparison.",
+      "fallback_rule": "If the initial publication is unavailable, require manual review."
+    }
+  },
+  "right": {
+    "market_id": "fictional-B",
+    "title": "Will the Example Index reach 100?",
+    "source_url": "https://example.org/fictional/rules/B",
+    "captured_at": "2026-10-07T08:50:00Z",
+    "rules": {
+      "resolution_source": "Fictional Example Bureau initial publication",
+      "observation_time": "2026-10-08T12:00:00Z",
+      "comparison": "gt",
+      "threshold": "100",
+      "unit": "index points",
+      "outcome_definition": "YES if the initial reported Example Index satisfies the comparison.",
+      "fallback_rule": "If the initial publication is unavailable, require manual review."
+    }
+  }
+}
