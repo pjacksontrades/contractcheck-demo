@@ -14,7 +14,7 @@ This repository contains an original AI-authored research workflow, synthetic in
 
 1. Read [the review workflow](free-workflow.md). You can use it manually without buying software.
 2. Inspect [the synthetic pair](synthetic_pair.json): seven manually entered rule fields, provenance and capture timestamps.
-3. Compare [the expected report](expected_report.json). It identifies the operator difference and keeps `review_required: true` and `legal_equivalence: false`.
+3. Compare [the expected report](expected_report.json). It identifies the operator difference and keeps `review_required: true` and `legal_equivalence_established: false`.
 4. Preserve the original rule wording and check the observation instant, units, fallback exceptions and missing evidence before making a research conclusion.
 
 Matching entered fields does not establish that the original contracts are interchangeable. This example does not retrieve market data, extract rules automatically, forecast outcomes or recommend trades.
